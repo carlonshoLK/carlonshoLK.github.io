@@ -1,0 +1,58 @@
+--ESTRUCTURA DEL PROYECTO
+
+templates/:
+index.html
+galeria.html
+contacto.html
+carrito.html
+novedades.html
+productos.html
+static/:
+css/:
+styles.css
+js/:
+scripts.js
+images/ 
+
+--VERSION EN GITHUB
+
+git init
+git add .
+git commit -m "Second front-end delivery"
+git push origin master
+
+--INSTALACION DJANGO
+
+pip install django
+django-admin startproject TiendaRopaDeportiva
+cd TiendaRopaDeportiva
+python manage.py startapp tienda
+
+--CREACION SCRIPT DE BASE DE DATOS
+
+python manage.py makemigrations tienda
+python manage.py migrate
+
+--CLONAR EL REPOSITORIO
+
+git clone <URL_DEL_REPOSITORIO>
+cd TiendaRopaDeportiva
+
+--INSTALAR DEPENDENCIAS
+
+pip install -r requirements.txt
+
+--RREALIZAR MIGRACIONES Y CREAR SUPERUSUARIO
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+
+--CARGAR DATOS INICIALES
+
+python manage.py loaddata initial_data.json
+
+--EJECUTAR EL SERVIDOR DE DESARROLLO
+
+python manage.py runserver
+
